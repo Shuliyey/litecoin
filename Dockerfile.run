@@ -1,0 +1,8 @@
+FROM ubuntu
+
+ADD . /root/
+
+RUN apt-get update \
+  && apt-get install -y vim
+
+CMD ["bash"]
